@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Mysore</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Explore Mysore</h1>
+        <p>Your Tourist Guide</p>
+    </header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="hotels.html">Hotels & Food</a>
+    <a href="travel.html">Travel Guide</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<section class="hero">
+    <h1>Welcome to Mysore</h1>
+    <p>Explore the Royal Heritage of Karnataka</p>
+    <button onclick="openModal()">Learn More</button>
+</section>
+<section>
+
+    <h2>About Mysore</h2>
+
+    <p>
+        Mysore is one of the most popular tourist
+        destinations in Karnataka.
+    </p>
+
+</section>
+
+<footer>
+    Explore Mysore © 2026
+</footer>
+
+<div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Mysore Tourism</h2>
+            <p>Welcome to Mysore!</p>
+            <p>Mysore is famous for its palace, gardens, zoo and rich culture.</p>
+        </div>
+</div>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

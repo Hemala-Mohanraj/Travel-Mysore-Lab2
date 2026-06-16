@@ -1,0 +1,171 @@
+.modal{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background:white;
+    width:50%;
+    margin:10% auto;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.close{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+}
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color:#2a9d8f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.hero{
+    background:url('images/home.jpg') center/cover no-repeat;
+    height:400px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size: bold;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+nav{
+    background-color:#caf0f8;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    text-decoration:none;
+    margin:10px;
+    color:#023047;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#2a9d8f;
+}
+
+
+section{
+    padding:20px;
+}
+
+h2{
+    text-align:center;
+    color:#2a9d8f;
+}
+
+p{
+    text-align:center;
+}
+
+
+img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.places-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:100px;
+    margin-top:20px;
+    
+}
+
+.card{
+    width:250px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.places-page .card{
+    width:100%;
+
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:contain;
+    background:white;
+}
+
+
+.card h3{
+    color:#2a9d8f;
+    margin:10px 0;
+}
+
+.card p{
+    padding:0 10px 10px;
+    text-align:justify;
+}
+
+/* FOOTER */
+footer{
+    background-color:#2a9d8f;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+}
+
+button{
+    background-color:#2a9d8f;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    
+}
+
+button:hover{
+    background-color:#21867a;
+}
+.btn-container{
+    display:flex;
+    justify-content:center;
+}

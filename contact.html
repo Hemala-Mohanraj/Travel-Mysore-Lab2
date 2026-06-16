@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mysore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Explore Mysore</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="hotels.html">Hotels & Food</a>
+    <a href="travel.html">Travel Guide</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>We are here to help you plan your Mysore trip.</p>
+</section>
+<section>
+    <h2>Find Your Location</h2>
+    <div class="btn-container">
+        <button onclick="getLocation()">Show My Location</button>
+    </div>
+
+   
+
+    <p id="location"></p>
+</section>
+
+<section>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/phone.png" alt="Phone">
+            <h3>Phone</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="card">
+            <img src="images/email.jpg" alt="Email">
+            <h3>Email</h3>
+            <p>info@exploremysore.com</p>
+        </div>
+
+        <div class="card">
+            <img src="images/location.jpg" alt="Location">
+            <h3>Location</h3>
+            <p>Mysore, Karnataka, India</p>
+        </div>
+
+    </div>
+
+    
+    
+</section>
+
+<footer>
+    <p>Explore Mysore</p>
+</footer>
+<script>
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        document.getElementById("location").innerHTML =
+        "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    document.getElementById("location").innerHTML =
+    "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</body>
+</html>
